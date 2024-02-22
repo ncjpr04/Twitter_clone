@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main_container {
+    display: flex;
+    /* overflow: auto; */
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+}
+
+.main1 {
+    width: 60%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100px;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.main1::-webkit-scrollbar {
+    width: 0;
+}
+
+.upper_nav {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    min-height: 50px;
+}
+
+.upper_nav1 {
+    height: 100%;
+    flex: 1;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0px;
+    min-height: 40px;
+    overflow: hidden;
+
+
+}
+
+.upper_nav1 h3 {
+    padding-top: 15px;
+}
+
+.support_bar {
+    width: 60px;
+    height: 5px;
+    background-color:rgb(29, 155, 240);
+    border-radius: 10px;
+}
+
+.settings img {
+    filter: invert(1);
+}
+
+.settings {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    padding-right: 12px;
+}
+
+.upper_nav2 {
+    flex: 1;
+    overflow: hidden;
+    /* Use flex property to distribute width equally among .upper_nav1 items */
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    /* bottom: -1; */
+    /* Remove this line */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10px;
+
+}
+
+.whats_new {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(0, 0, 0);
+    min-height: 200px;
+}
+
+.what_new1 {
+    height: 33%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.circle1 {
+    height: 40px;
+    width: 40px;
+    background-color: beige;
+    border-radius: 50%;
+    margin: auto 0px auto 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle2 {
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.type_here {
+    height: 40px;
+    width: auto;
+    flex: 1;
+    background-color: rgb(0, 0, 0);
+    margin: auto 10px auto 10px;
+    padding-left: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.what_new1 .post_button {
+    width: 70px;
+    height: 35px;
+    margin-left: auto;
+    margin-right: 15px;
+    font-size: medium;
+    font-weight: 700;
+    padding: auto;
+}
+
+.load_new {
+    width: 100%;
+    height: 34%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    font-weight: 400;
+}
+
+
+.content {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center;
+    /* display: inline-block; */
+}
+
+.post_profile_pic {
+    margin: 5px;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.post_profile_pic img {
+    width: 30px;
+    height: 30px;
+    /* filter: invert(1); */
+}
+
+.post_content {
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(0, 0, 0);
+}
+
+.user_info {
+    height: 30px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.m10 {
+    margin-left: 5px;
+}
+
+.person_name {
+    font-size: medium;
+    font-weight: 900;
+}
+
+.person_username {
+    font-size: small;
+}
+
+.time {
+    font-size: small;
+
+}
+
+.options_button img {
+    filter: invert(1);
+}
+
+.options_button {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.post_main_content {
+    padding: 5px;
+}
+
+.mb {
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+.contain_img {
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contain_img img {
+    margin-right: 3px;
+    filter: invert(1);
+}
+
+.image {
+    overflow: hidden;
+    height: fit-content;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.place_for_image {
+    overflow: hidden;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.main2 {
+    height: 100vh;
+    width: 40%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.main2::-webkit-scrollbar {
+    width: 0;
+}
+
+.round_border {
+    border-radius: 20px;
+    background-color: rgb(22, 24, 28);
+}
+
+.search_space {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: fit-content;
+    position: sticky;
+    top: 0;
+}
+
+.search_space input {
+    min-height: 45px;
+    width: 85%;
+    border: none;
+    margin: 7px auto;
+    /* box-sizing: border-box; */
+    /* border: none; */
+    /* border-bottom: 1px solid #ccc; */
+    font-size: 16px;
+    background-image: url('Images/search.png');
+    background-position: 20px 12px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 60px;
+    /* outline: none; */
+    background-size: 20px 20px;
+    /* filter: invert(100%); */
+    /* -webkit-filter: invert(100%); */
+    border-radius: 30px;
+}
+
+.trending {
+    min-height: 500px;
+    width: 85%;
+    border: none;
+    margin: 7px auto;
+    overflow: hidden;
+}
+
+.news {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(22, 24, 28);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.news:hover {
+    background-color: rgb(89, 96, 110);
+}
+
+.load_new1 {
+    height: 40px;
+    ;
+    background-color: rgb(22, 24, 28);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: medium;
+    font-weight: 400;
+    padding-left: 20px;
+    color:rgb(29, 155, 240);
+
+}
+
+.heading {
+    min-height: 50px;
+    background-color: rgb(22, 24, 28);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.who_to_follow {
+    height: fit-content;
+    min-height: 225px;
+    width: 85%;
+    overflow: hidden;
+    border: none;
+    margin: 7px auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news1 {
+    padding-left: 20px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.news1:hover {
+    background-color: rgb(89, 96, 110);
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer_space {
+    min-height: 60px;
+    width: 80%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+
+.footer h3 {
+    margin: 10px;
+}
+
+.extra_space {
+    min-height: 10px;
+}
+
+.messages {
+    min-height: 50px;
+    width: 85%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0px;
+    position: sticky;
+    border-radius: 20px 20px 0px 0px;
+    font-size: larger;
+    font-weight: bolder;
+    box-shadow: 0px -2px 3px gray;
+}
+.messages:hover{
+    background-color: rgb(7, 7, 7);
+    
+    box-shadow: 0px -3px 5px rgb(172, 172, 172);
+}
